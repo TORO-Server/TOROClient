@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "toro_client",
+  "version": "${version}",
+  "name": "TOROClient",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/TORO-Server/TOROClient"
+  },
+  "license": "MIT",
+  "icon": "assets/toro_client/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "marumasa.toro_client.client.TOROClientClient"
+    ],
+    "main": [
+      "marumasa.toro_client.TOROClient"
+    ]
+  },
+  "mixins": [
+    "toro_client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
