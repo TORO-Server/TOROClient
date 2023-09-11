@@ -17,6 +17,8 @@ public class CreativeTab {
             Text.translatable("itemGroup." + TOROClient.MOD_ID)
     ).entries((displayContext, entries) -> {
 
+        final String playerName = Utils.getClientPlayerName();
+
 
         // ここにクリエイティブに追加したいアイテムを書く
         entries.add(Utils.setNBT(
@@ -25,7 +27,7 @@ public class CreativeTab {
         ));
         entries.add(Utils.setNBT(
                 Items.PLAYER_HEAD,
-                String.format("{SkullOwner:%s,display:{Lore:['[{\"text\":\"自分の頭\",\"italic\":false,\"color\":\"gold\"}]']}}", Utils.getClientPlayerName())
+                String.format("{SkullOwner:%s,display:{Lore:['[{\"text\":\"自分の頭\",\"italic\":false,\"color\":\"gold\"}]']}}", playerName)
         ));
         entries.add(Utils.setNBT(
                 Items.CREEPER_SPAWN_EGG,
