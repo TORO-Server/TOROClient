@@ -88,9 +88,4 @@ public class Utils {
                 "key.categories." + TOROClient.MOD_ID
         );
     }
-
-    public static void sendCommand(String command, ClientPlayNetworkHandler networkHandler) {
-        if (networkHandler == null) return;
-        networkHandler.sendCommand(command);
-    }
 }
