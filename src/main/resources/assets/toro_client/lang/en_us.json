@@ -1,3 +1,5 @@
 {
-  "itemGroup.toro_client": "TOROClient"
+  "itemGroup.toro_client": "TOROClient",
+  "key.categories.toro_client": "TOROClient",
+  "text.toro_client.luna_chat.jp_toggle": "LunaChatの日本語変換の切り替え"
 }
